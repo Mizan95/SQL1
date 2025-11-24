@@ -1,5 +1,6 @@
 /* ❓What are the 100 top paying Data Scientist jobs and for which companies?❓
-We will return the above analysis with 2 SQL queries. 
+We will return the above analysis with two approaches in our SQL queries. After both approaches is my conclusion describing which
+approach is best practice.
 The first approach is using a CTE (Common Table Expression).
 The second approach is using a subquery.
 Within  both approaches, comments are visible to explain the logic.
@@ -7,7 +8,7 @@ Within  both approaches, comments are visible to explain the logic.
 
 
 /*
-*-*-*-*- Below is the first approach with CTE *-*-*-*-
+*-*-*-*- Below is the first approach using a CTE *-*-*-*-
 */
 
 /*
@@ -50,11 +51,11 @@ LIMIT
     500
 
 /*
-*-*-*-*- Below is the second approach with Subquery *-*-*-*-
+*-*-*-*- Below is the second approach using a Subquery *-*-*-*-
 */
 
 /*
-1. This query merges the Fact table (job_postings_fact) with the company Dimension table (company_dim) directly
+1. This query consists of a single block and merges the Fact table (job_postings_fact) with the company Dimension table (company_dim) directly
 without any intermediary CTE
 2. The merge is an inner join with the primary key of company_dim being company_id. This matching with the foreign key of
 job_postings_fact which is also company_id.
@@ -88,3 +89,10 @@ LIMIT
     500
 
 
+/*
+CONCLUSION
+It is best practice to use the first approach with a CTE as this enables the CTE to be used multiple times for different queries.
+It also aligns with the spirit of maintainable code. This is because the CTE can be customised within that single code block.
+Whereas, subqueries will all have to be customised in all their separate instances.
+Using a CTE also contributes to more readable code. 
+*/
