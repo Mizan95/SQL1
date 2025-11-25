@@ -1,5 +1,5 @@
 /*
-❓What are the skills required for the top-paying 500 Data Scientist jobs?
+❓What are the top 10 skills required for the top-paying 500 Data Scientist jobs?
 This query uses two Common Table Expressions (CTEs) to first identify the top 500 highest paying Data Scientist roles and then map them to their required skills before aggregating the results.
 Both CTEs are 'daisy chained' together.
 The main query counts the frequency of each skill among the top 500 highest-paying jobs.
@@ -48,4 +48,6 @@ WHERE
 GROUP BY
     skill_name
 ORDER BY
-    number_of_jobs DESC;
+    number_of_jobs DESC
+LIMIT
+    20;

@@ -1,5 +1,6 @@
 /*
-4. What are the top skills based on salary for my role?
+5. What are the top 20 optimal skills to learn?
+Optimal meaning those skills that are High Demand and High Paying
 This approach also uses two 'daisy-chained' CTEs as a clean maintainable solution. And thereafter a main query containing an inner join of both CTEs.
 Comments are present to explain the logic.
 */
@@ -28,11 +29,11 @@ data_scientist_jobs AS (
         salary_year_avg IS NOT NULL
 )
 
--- Main query: Sums and averages salaries and aggregates these results based on each skill
+-- Main query: Sums salaries and Counts jobs and then, aggregates these results based on each skill
 -- This is facilitated by an Inner Join between both CTEs 
 SELECT
     SUM(data_scientist_jobs.salary) AS total_salary,
-    AVG(data_scientist_jobs.salary) AS avg_salary,
+    COUNT(data_scientist_jobs.job_id) AS number_of_jobs,
     skill_name
 FROM
     data_scientist_jobs
@@ -40,5 +41,6 @@ INNER JOIN
     skills_job_table ON data_scientist_jobs.job_id = skills_job_table.job_id
 GROUP BY
   skill_name
-ORDER BY total_salary DESC
-
+ORDER BY number_of_jobs DESC
+LIMIT
+    20
