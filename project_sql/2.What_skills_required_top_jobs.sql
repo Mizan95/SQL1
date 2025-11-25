@@ -1,6 +1,7 @@
 /*
 ❓What are the skills required for the top-paying 500 Data Scientist jobs?
-This query uses two Common Table Expressions (CTEs) to first identify the most relevant jobs and then link them to their required skills before aggregating the results.
+This query uses two Common Table Expressions (CTEs) to first identify the top 500 highest paying Data Scientist roles and then map them to their required skills before aggregating the results.
+Both CTEs are 'daisy chained' together.
 The main query counts the frequency of each skill among the top 500 highest-paying jobs.
 */
 
@@ -32,7 +33,8 @@ top_data_scientist_jobs AS (
         500
 )
 
--- Main Query: Aggregates skills for the jobs identified in the top_data_scientist_jobs CTE, ranks them by frequency, and orders the result.
+-- Main Query: Aggregates skills for the jobs identified in the top_data_scientist_jobs CTE and orders the result.
+-- Additionally, I have ranked them by number of jobs
 -- NULL value are also removed from the result
 SELECT
     ROW_NUMBER() OVER (ORDER BY COUNT(top_data_scientist_jobs.job_id) DESC) AS ranking,

@@ -32,6 +32,7 @@ job_postings_fact which is also company_id.
 */
 
 SELECT
+    job_title_short AS job_title,
     company_list.name AS company_name,
     job_country AS country,
     salary_year_avg AS salary
@@ -48,7 +49,7 @@ ORDER BY
     salary DESC
 -- Limit result set to 500
 LIMIT
-    500
+    500;
 
 /*
 *-*-*-*- Below is the second approach using a Subquery *-*-*-*-
