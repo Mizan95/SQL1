@@ -41,7 +41,8 @@ INNER JOIN
     skills_job_table ON data_scientist_jobs.job_id = skills_job_table.job_id
 GROUP BY
   skill_name
-ORDER BY number_of_jobs DESC
+ORDER BY 
+  number_of_jobs DESC
 LIMIT
     20
 
