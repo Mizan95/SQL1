@@ -53,7 +53,7 @@ Breakdown of top Data Scientist jobs of 2023
 - The median salary of $336,110 is very close to the average, indicating that most of the top 100 jobs offer uniformly high pay, with few major dips.
 - The vast majority of these highest-paying roles, 87 out of 100, are located in the United States demonstrating its dominance in the market for elite data science compensation.
 
-![Top Paying Data Scientist Roles](assets\1.top_DS_roles.png)
+![Top Paying Data Scientist Roles](assets/1.top_DS_roles.png)
 *Bar chart visualising the salary for the top 10 salaries for Data Scientist roles and the companies hiring for them.*
 
 ### Top 20 skills required for the top-paying 500 Data Scientist jobs
@@ -171,7 +171,7 @@ Analysis of top 20 skills for all Data Scientist jobs globally in 2023
 - Note for conciseness the chart below shows top 10 skills.
 
  
-![top 10 skills for all Data Scientist jobs globally in 2023](assets\3.top_10_skills_ALL_JOBS.png)
+![top 10 skills for all Data Scientist jobs globally in 2023](assets/3.top_10_skills_ALL_JOBS.png)
 *Bar chart visualising the top 10 skills required for all Data Scientist jobs in 2023*
 
 ### Top 20 skills for Data Scientist roles based on combined and average salaries
@@ -233,7 +233,7 @@ Analysis of top 20 skills for all Data Scientist jobs and their combined salarie
 
 - Note for conciseness the chart below shows top 10 skills.
 
-![Analysis of top 20 skills for all Data Scientist jobs and their combined salaries and their average salaries](assets\4.top_10_skills_combined_salaries.png)
+![Analysis of top 20 skills for all Data Scientist jobs and their combined salaries and their average salaries](assets/4.top_10_skills_combined_salaries.png)
 *Bar chart visualising the top 10 skills and their combined total salaries in the job market*
 
 
@@ -291,7 +291,7 @@ Analysis of top 20 skills for all Data Scientist jobs and their combined salarie
 
 - Note for conciseness the chart below shows top 10 skills.
 
-![Top 20 Optimal skills for Data Scientist roles overall](assets\5.top_10_optimal_skills.png)
+![Top 20 Optimal skills for Data Scientist roles overall](assets/5.top_10_optimal_skills.png)
 *Bar chart visualising the top 10 Optimal skills with their combined total salaries in the job market, and their total job postings*
 # What I learned
 
