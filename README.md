@@ -116,7 +116,7 @@ Breakdown of top 20 skills required for top 500 Data Scientist jobs in 2023
 - Tableau and AWS are close, with 83 and 80 mentions, highlighting visualisation and cloud infrastructure needs.
 - Note for conciseness the chart below shows top 10 skills.
 
-![top 10 skills required for top 500 data scientist jobs](\assets\2.top_10_skills_required.png)
+![top 10 skills required for top 500 data scientist jobs](assets/2.top_10_skills_required.png)
 
 *Bar chart visualising the top 20 skills required for top 500 Data Scientist jobs in 2023*
 
