@@ -47,13 +47,16 @@ LIMIT
 
 Breakdown of top Data Scientist jobs of 2023
 
-- The maximum salary in this set is an outlier at $960,000.00, offered by East River Electric Power Cooperative, Inc.
-- The average salary for these elite roles is approximately $339,611.22, reflecting the highest compensation tier in data science.
+- The maximum salary in this set is an outlier at $960,000, offered by East River Electric Power Cooperative, Inc.
+- The average salary for these elite roles is approximately $339,611, reflecting the highest compensation tier in data science.
 - The minimum salary in the top 100 is still exceptionally high at $274,675.00, setting a very high floor for the best-paid positions.
-- The median salary of $336,110.00 is very close to the average, indicating that most of the top 100 jobs offer uniformly high pay, with few major dips.
+- The median salary of $336,110 is very close to the average, indicating that most of the top 100 jobs offer uniformly high pay, with few major dips.
 - The vast majority of these highest-paying roles, 87 out of 100, are located in the United States demonstrating its dominance in the market for elite data science compensation.
 
-### Top 10 skills required for the top-paying 500 Data Scientist jobs
+![Top Paying Data Scientist Roles](assets\1.top_DS_roles.png)
+*Bar chart visualising the salary for the top 10 salaries for Data Scientist roles and the companies hiring for them.*
+
+### Top 20 skills required for the top-paying 500 Data Scientist jobs
 To identify top 10 skills required for the top-paying 500 Data Scientist jobs, I generated two CTEs as the foundation of my query. Then I merged both CTEs with an INNER JOIN and filtered out NULL values.
 
 ```sql
@@ -104,6 +107,18 @@ ORDER BY
 LIMIT
     20;
 ```
+Breakdown of top 20 skills required for top 500 Data Scientist jobs in 2023
+
+- Python is the most demanded skill, appearing in 357 of the job postings.
+- SQL is the second most critical skill, mentioned in 278 job listings.
+- R rounds out the top three languages, required by 188 jobs.
+- Spark leads the specialized tools, demanded by 103 job postings for Big Data processing.
+- Tableau and AWS are close, with 83 and 80 mentions, highlighting visualisation and cloud infrastructure needs.
+- Note for conciseness the chart below shows top 10 skills.
+
+![top 10 skills required for top 500 data scientist jobs](assets\2.top_10_skills_required.png)
+
+*Bar chart visualising the top 20 skills required for top 500 Data Scientist jobs in 2023*
 
 ### Top 20 skills for Data Scientist roles overall
 To identify top 20 skills for Data Scientist roles overall, I also used two CTEs as the foundation of my query. Then, I aggregated the data which was facilitated by an INNER JOIN of both CTEs.
@@ -147,6 +162,17 @@ ORDER BY
 LIMIT
     20
 ```
+Analysis of top 20 skills for all Data Scientist jobs globally in 2023
+- Python is the most dominant skill, required for 114,016 of the data scientist jobs.
+- SQL remains critical, following closely with 79,174 job mentions.
+- R is the third most requested language, demanded in 59,754 job listings.
+- The top five is completed by the statistical language SAS (29,642) and the visualization tool Tableau (29,513).
+- The core programming and database skills (Python, SQL, R) are requested in significantly more jobs than all other skills combined.
+- Note for conciseness the chart below shows top 10 skills.
+
+ 
+![top 10 skills for all Data Scientist jobs globally in 2023](assets\3.top_10_skills_ALL_JOBS.png)
+*Bar chart visualising the top 10 skills required for all Data Scientist jobs in 2023*
 
 ### Top 20 skills for Data Scientist roles based on combined and average salaries
 To identify top 20 skills based on salary for Data Scientist roles, I also used two CTEs as the foundation of my query. Then, I aggregated the data which was facilitated by an INNER JOIN of both CTEs. 
@@ -193,6 +219,24 @@ LIMIT
     20
 ```
 
+Analysis of top 20 skills for all Data Scientist jobs and their combined salaries and their average salaries
+
+- Python is the single most valuable skill, leading the market with a total combined salary of approximately $595.3 million across high-paying jobs.
+
+- The foundational trio of Python, SQL ($436.2 million), and R ($336.0 million) collectively account for the vast majority of the data science market's aggregate financial value.
+
+- The high Total Combined Salary for these top skills is driven by a massive volume of job postings, rather than extremely high individual salaries.
+
+- All top skills—Python, SQL, R, Tableau, and SAS—are associated with a consistently high average salary range (mostly between $122,000 and $138,500).
+
+- This ranking highlights the essential skills required for the broadest and most lucrative segment of the data science job market in 2023.
+
+- Note for conciseness the chart below shows top 10 skills.
+
+![Analysis of top 20 skills for all Data Scientist jobs and their combined salaries and their average salaries](assets\4.top_10_skills_combined_salaries.png)
+*Bar chart visualising the top 10 skills and their combined total salaries in the job market*
+
+
 ### Top 20 Optimal skills for Data Scientist roles overall
 To identify optimal skills to learn for Data Scientist roles overall, I once again used two CTEs as the foundation of my query. I then aggregated the data which was facilitated by an INNER JOIN of both CTEs.
 
@@ -238,7 +282,17 @@ ORDER BY
 LIMIT
     20
 ```
+Analysis of top 20 skills for all Data Scientist jobs and their combined salaries and their average salaries
 
+- Python is the clear market leader, with the highest total combined salary (nearly $595 Million) and the highest number of job postings (4,312).
+- The overall trend shows a strong positive correlation: as the total number of job postings (green line) decreases across the top 10 skills, the total combined salary (orange bars) generally decreases as well.
+- The foundational languages, Python, SQL, and R, account for the vast majority of both the total salary and the job count in the top 10.
+- The combined total salary for a skill like Tableau, ($168 Million) is significantly higher than deep learning frameworks like TensorFlow ($92 Million) and PyTorch ($82 Million), primarily due to the higher volume of job postings for Tableau.
+
+- Note for conciseness the chart below shows top 10 skills.
+
+![Top 20 Optimal skills for Data Scientist roles overall](assets\5.top_10_optimal_skills.png)
+*Bar chart visualising the top 10 Optimal skills with their combined total salaries in the job market, and their total job postings*
 # What I learned
 
 

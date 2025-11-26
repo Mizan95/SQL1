@@ -54,12 +54,11 @@ LIMIT
 
 /*
 Analysis
-Python is the most demanded skill, appearing in 358 of the job postings.
-SQL is the second most critical skill, mentioned in 279 job listings.
-R rounds out the top three languages, required by 189 jobs.
-Spark leads the specialized tools, demanded by 101 job postings for Big Data processing.
-Tableau and AWS are close, with 84 and 77 mentions, highlighting visualization and cloud infrastructure needs.
-
+- Python is the most demanded skill, appearing in 357 of the job postings.
+- SQL is the second most critical skill, mentioned in 278 job listings.
+- R rounds out the top three languages, required by 188 jobs.
+- Spark leads the specialized tools, demanded by 103 job postings for Big Data processing.
+- Tableau and AWS are close, with 83 and 80 mentions, highlighting visualization and cloud infrastructure needs.
 [
   {
     "ranking": "1",

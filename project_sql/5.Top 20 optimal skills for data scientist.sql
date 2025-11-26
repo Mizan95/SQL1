@@ -48,14 +48,10 @@ LIMIT
 
 /*
 Analysis
-- Foundational Skills Dominate Market Value: Python, SQL, and R are the core requirements, accounting for the vast majority of jobs and the largest aggregate financial value (Python's total salary is approx $595.3M).
-
-- Specialisation Commands Premium Pay: Skills like Go ($147,466 average) and PyTorch ($145,989 average) offer the highest average salaries, suggesting a premium for specialized knowledge in niche or highly technical areas (e.g., performance, deep learning).
-
-- Low Demand, High Reward: The top-paying skills appear in significantly fewer jobs (e.g., Go with 316 jobs) compared to the essential skills (e.g., Python with 4,312 jobs).
-
-- Cloud/ML Frameworks are Mid-Tier: Cloud and machine learning tools like Spark ($144,399 average) and TensorFlow ($143,440 average) bridge the gap, offering high average salaries while still being required in a substantial number of jobs.
-
+Python is the clear market leader, with the highest total combined salary (nearly $595 Million) and the highest number of job postings (4,312).
+The overall trend shows a strong positive correlation: as the total number of job postings (green line) decreases across the top 10 skills, the total combined salary (orange bars) generally decreases as well.
+The foundational languages, Python, SQL, and R, account for the vast majority of both the total salary and the job count in the top 10.
+The combined total salary for a skill like Tableau ($\$168M$) is significantly higher than deep learning frameworks like TensorFlow ($\$92M$) and PyTorch ($\$82M$), primarily due to the higher volume of job postings for Tableau.
 [
   {
     "total_salary": "595267752",
