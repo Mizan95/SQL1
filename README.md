@@ -289,16 +289,48 @@ Analysis of top 20 skills for all Data Scientist jobs and their combined salarie
 - The foundational languages, Python, SQL, and R, account for the vast majority of both the total salary and the job count in the top 10.
 - The combined total salary for a skill like Tableau, ($168 Million) is significantly higher than deep learning frameworks like TensorFlow ($92 Million) and PyTorch ($82 Million), primarily due to the higher volume of job postings for Tableau.
 
-- Note for conciseness the chart below shows top 10 skills.
+- Note for conciseness the table below shows top 10 skills.
 
-![Top 20 Optimal skills for Data Scientist roles overall](assets/5.top_10_optimal_skills.png)
-*Bar chart visualising the top 10 Optimal skills with their combined total salaries in the job market, and their total job postings*
+| Combined salaries     | Number of jobs | Skill |
+|------------------|----------------|------------|
+| $595,267,752     | 4312           | python     |
+| $436,194,499     | 3151           | sql        |
+| $336,021,245     | 2486           | r          |
+| $168,230,566     | 1278           | tableau    |
+| $151,178,759     | 1230           | sas        |
+| $141,083,006     | 1016           | aws        |
+| $136,601,278     | 946            | spark      |
+| $91,944,925      | 641            | tensorflow |
+| $82,794,849      | 623            | azure      |
+| $82,337,831      | 564            | pytorch    |
+
+*Table visualising the top 10 Optimal skills with their combined total salaries in the job market, and their total job postings*
 # What I learned
+In this project, I learned and upskilled on key SQL techniques and best practises. 
 
+- **Crafting complex yet simple queries**: I crafted complex queries in terms of their functionality. Yet, they were easy on their syntax and keeping the code concise and easy to read. This was especially so in my CTE component approach where I resused components in my project as a scalable and maintenanble solution.
+- **Data aggregation**: I became very confortable with aggregating data with SQL code and expnading the basic logic by combining aggregations across CTEs.
+- **Problem solving capabilities**: I increased my problem-solving skills especially so when I had to plan the most appropriate approach, when turning my initial questions into insightful SQL queries. 
 
 
 # Conclusions
+### Insights
+1. **Elite data science roles command exceptionally high pay**, with top-100 salaries ranging from $274k to nearly $1M, and a stable median around $336k—showing the uniform strength of compensation at the top tier.
 
+2. **The U.S. overwhelmingly dominates high-end data science hiring**, accounting for 87% of the top-100 highest-paying jobs globally.
+
+3. **Python, SQL, and R form the core skill set of the profession**, appearing in the majority of high-paying postings and representing the largest share of total combined salary value across all skills.
+
+4. **Market demand strongly influences financial value**, as the highest total salary pools (e.g., Python: $595M) are driven by high job volumes rather than extreme individual salaries.
+
+5. **Specialized tools like Spark, Tableau, AWS, and SAS remain highly valuable**, with Tableau notably generating more total salary than deep-learning frameworks due to broader industry adoption.
+
+### Closing Thoughts
+By working and completing this SQL project, my SQL skills were greatly enhanced. 
+This also provided me with valuable insights into the job market of 2023, which was the year that AI tools were starting to become mass adopted by the world.
+Data Scientists were becoming in high demand and the exceptionally high pay they were being offered for the most elite roles showcase this.
+Skills such as Python and SQL are at the core of a Data Scientist's toolkit. This is indicated by their clear high demand and high salary.
+Aspiring Data Scientists can better position themselves by focusing on these high-demand and high-salary skills.
 
 
 
