@@ -4,7 +4,7 @@
 🔎SQL queries can be found here: [project_sql folder](/project_sql/)
 
 # Tools I used
-For this deep dive, I harnessed the power of the following tools:
+For this project, I harnessed the power of the following tools:
 
 - **SQL:** This allowed me to query the database and unearth the insights
 - **PosgreSQL:** The database management system ideal for handling the data
@@ -12,9 +12,14 @@ For this deep dive, I harnessed the power of the following tools:
 - **Git and GitHub:** An essential for version control, and sharing my SQL queries and overall data analysis.
 
 # My Approach
-My approach to this analysis was to implement a scalable and maintainable code base. In other words, reduce the amount of redundant lines of code and enable efficient querying.
-The way I achieved this, was that I generated reusable modules of CTEs. These CTEs were the foundation of the main queries found within each SQL file (to the exception of file 1 where there is no CTE).
-To make my code less error prone, these CTE modules handled joins, so there was no need to perform any joins in my main queries. This also reduced the chance of reference errors within my code base.
+My approach to this analysis was to implement a scalable and maintainable code base from the beginning. In other words, reduce the amount of redundant lines of code and enable efficient querying.
+The way I achieved this, was that I generated reusable modules of CTEs. These CTEs were the foundation of the main queries found within each SQL file (to the exception of file 1 where there was no requirement of a CTE).
+
+These CTE modules handled joins between database tables. So, there was no need in my main queries to perform any of these kinds of joins.
+This reduced the possibility of reference errors within my code base.
+
+I used aggregation functions for key calculations. And to make the data more clear, I also used the ROUND function to remove any decimal values in salary data.
+
 
 # The Analysis
 Each query was aimed at investigating different aspects of the Data Scientist job market with a main focus on skills and salary.
